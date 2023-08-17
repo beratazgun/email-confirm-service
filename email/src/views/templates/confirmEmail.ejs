@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>E-Mail Confirmation</title>
+	</head>
+	<style>
+		.logo {
+			text-align: center;
+			font-size: 40px;
+			color: #7626bc;
+			font-weight: 700;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.logo {
+				font-size: 30px;
+			}
+			.logo img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+	</style>
+	<body>
+		<h1 class="logo">users</h1>
+		<h2>Hello <%= firstName %>,</h2>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="padding: 5px 0; text-align: center">
+					<p>
+						To ensure the security of your account, we require you to confirm
+						your email address. Please click the link below to confirm your
+						email:
+					</p>
+					<p>
+						Please confirm your email address by clicking on the link below.
+					</p>
+					<a
+						href="<%= url %>"
+						style="
+							display: inline-block;
+							background-color: #7626bc;
+							color: #fff;
+							padding: 10px 20px;
+							border-radius: 4px;
+							text-decoration: none;
+						">
+						Confirm Email
+					</a>
+					<p>
+						This step helps us protect your account and ensure your security. If
+						you did not initiate this request, please disregard this email.
+					</p>
+					<p>Thank you</p>
+					<p><%= email %></p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
