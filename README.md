@@ -30,7 +30,7 @@ docker-compose down
 This will stop project
 
 
-### Preview
+# Preview
 
 
 https://github.com/beratazgun/email-confirm-service/assets/52507194/10eaeaa0-9bf1-451a-9672-7021e129a81d
